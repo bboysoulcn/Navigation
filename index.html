@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<title>主页</title>
+	<link rel="stylesheet" href="static/css/layui.css">
+	<link rel="stylesheet" href="static/bboysoul.css" />
+
+
+</head>
+
+
+<body class="layui-bg-gray">
+	<!-- 引入头部 -->
+	<div id="header"></div>
+
+
+
+	<div class="layui-container ">
+
+		<div class="layui-row ">
+			<br>
+			<div class="layui-col-md7 layui-col-md-offset5">
+			<img src="static/img/head.jpg" width="150px" height="150px" style="margin: 0 auto; "/>
+			</div>
+			<hr class="layui-bg-red layui-col-md-offset3 layui-col-md6" />
+			<form action="https://cn.bing.com/search" method="GET" class="layui-form-item">
+				<div class="layui-col-md5 layui-col-md-offset3 ">
+					<input type="text" name="q"  autofocus="autofocus" class="layui-input layui-input-radius layui-shadow">
+				</div>
+				&nbsp;
+				<input type=submit class="layui-btn layui-btn-radius layui-shadow" value="打死不用百度" name=btnG>
+			</form>
+			<div class="layui-card layui-col-md7 layui-shadow layui-radius ">
+				<div class="layui-card-header title ">常用链接</div>
+				<div class="layui-card-body  layui-btn-container">
+					<a href="https://www.baidu.com"
+						class=" layui-btn layui-btn-radius layui-shadow layui-btn-warm">百度</a>
+				</div>
+			</div>
+
+			<div class="layui-card layui-col-md4 layui-col-md-offset1 layui-shadow layui-radius">
+				<div class="layui-card-header title ">
+					公告
+				</div>
+				<div class="layui-card-body">
+					欢迎访问内网首页
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- 引入尾部 -->
+	<div id="footer"></div>
+	<script src="static/layui.js"></script>
+	<script type="text/javascript" src="static/bboysoul.js"></script>
+	<!-- 引入jquery 实现load方法 -->
+	<script src="static/jquery-3.4.1.min.js"></script>
+	<script type="text/javascript">
+		$("#header").load("common/header.html");
+		$("#footer").load("common/footer.html");
+	</script>
+
+</body>
+
+</html>
